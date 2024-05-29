@@ -1,0 +1,46 @@
+def muliplication(x,y):
+    return (x * y)
+    
+def addition(x,y):
+    return (x + y)
+    
+def subtraction(x,y):
+    return (x - y)
+    
+def division(x,y):
+    return(x//y)
+    
+def instructions():
+    print('Select a fuction!\n')
+    print('1.addition')
+    print('2.subtraction')
+    print('3.muliplication')
+    print('4.division')
+    print('5.EXIT')
+instructions()
+
+while True:
+    user = int(input('enter an instructions (1, 2, 3, 4, 5): '))
+    
+    if user in (1,2,3,4):
+        num1 = int(input('Number 1 = '))
+        num2 = int(input('Number 2 = '))
+
+    if user == 1:
+        print('Ansner = ', addition(num1,num2))
+        
+    elif user == 2:
+        print('Ansner = ', subtraction(num1,num2))
+        
+    elif user == 3:
+        print('Ansner = ',muliplication(num1,num2))
+        
+    elif user == 4:
+        print('Ansner = ',division(num1,num2))
+        
+    elif user == 5:
+        print('Thank you!!!!!')
+        break
+    else:
+        print('Enter a valid input!!')
+        break   
